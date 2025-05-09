@@ -29,7 +29,7 @@ Astronomers frequently need to visualize the spectral energy distributions of as
 - Applying extinction or redshift corrections
 - Plotting results cleanly
 
-All of this is time-consuming and error-prone when done manually. **BatchSED** aims to simplify this pipeline, especially for batch processing.
+All of this is time-consuming and error-prone when done manually. **QuickSED** aims to simplify this pipeline, especially for batch processing.
 
 ---
 
@@ -93,7 +93,7 @@ _As a user analyzing a reddened object, I want to optionally provide extinction 
 ### Basic Usage: From CSV with GAIA/2MASS magnitudes
 
 ```python
-from batchsed import SEDBuilder
+from quicsed import SEDBuilder
 
 sed = SEDBuilder("my_photometry.csv")
 sed.convert_magnitudes_to_flux()
