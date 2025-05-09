@@ -4,13 +4,13 @@
 
 ---
 
-## 📖 Background
+## Background
 
 The idea for this package came to me during a hands-on session on radiative processes in astrophysics. I was trying to estimate the effective temperature of a white dwarf by plotting its Spectral Energy Distribution (SED). After collecting data from various catalogs like GAIA and 2MASS, I found myself struggling just to identify which magnitudes belonged to which filters, what zero points to use, and how to convert them properly. I thought — this should be easier. This package is the result of that experience.
 
 ---
 
-## 🧩 Requirements
+## Requirements
 
 - Python ≥ 3.8
 - numpy
@@ -21,7 +21,7 @@ The idea for this package came to me during a hands-on session on radiative proc
 
 ---
 
-## 🎯 Problem the Project Aims to Solve
+## Problem the Project Aims to Solve
 
 Astronomers frequently need to visualize the spectral energy distributions of astronomical objects based on photometric data from different surveys. This task involves:
 - Merging magnitudes across filters
@@ -33,7 +33,7 @@ All of this is time-consuming and error-prone when done manually. **BatchSED** a
 
 ---
 
-## 🔧 Expected Functionality of the Project
+## Expected Functionality of the Project
 
 1. **Read photometry tables** (CSV, ASCII, or FITS)
 2. **Identify filter bands and units** (e.g., GAIA_G, 2MASS_J)
@@ -44,7 +44,7 @@ All of this is time-consuming and error-prone when done manually. **BatchSED** a
 
 ---
 
-## 🧠 Why Each Piece of Functionality is Needed
+## Why Each Piece of Functionality is Needed
 
 | Feature                      | Why It’s Needed |
 |-----------------------------|------------------|
@@ -57,7 +57,7 @@ All of this is time-consuming and error-prone when done manually. **BatchSED** a
 
 ---
 
-## 🔌 Interfaces / Dependencies
+## Interfaces / Dependencies
 
 - **Input**: Table file with one row per object; columns for magnitudes or fluxes.
 - **Output**: PNG/PDF plots; optional output CSV with fluxes per filter.
@@ -68,7 +68,7 @@ All of this is time-consuming and error-prone when done manually. **BatchSED** a
 
 ## 👤 User Stories
 
-### ✅ Main Functionality
+### Main Functionality
 
 **User Story 1:**  
 _As an undergraduate student working on stellar astrophysics, I want to quickly convert a table of magnitudes from different filters into SED plots, so that I can estimate stellar temperatures visually._
@@ -78,7 +78,7 @@ _As a researcher with a catalog of 1000 galaxies, I want to generate SEDs for ea
 
 ---
 
-### ⚠️ Edge Cases
+### Edge Cases
 
 **Edge Case 1:**  
 _As a user who accidentally includes inconsistent units or unknown filters, I want the program to raise a clear error or warning instead of silently failing._
@@ -88,7 +88,7 @@ _As a user analyzing a reddened object, I want to optionally provide extinction 
 
 ---
 
-## 🧪 Pseudocode Usage Examples
+##  Pseudocode Usage Examples
 
 ### Basic Usage: From CSV with GAIA/2MASS magnitudes
 
