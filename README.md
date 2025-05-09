@@ -66,7 +66,7 @@ All of this is time-consuming and error-prone when done manually. **QuickSED** a
 
 ---
 
-## 👤 User Stories
+## User Stories
 
 ### Main Functionality
 
@@ -93,7 +93,7 @@ _As a user analyzing a reddened object, I want to optionally provide extinction 
 ### Basic Usage: From CSV with GAIA/2MASS magnitudes
 
 ```python
-from quicsed import SEDBuilder
+from quicksed import SEDBuilder
 
 sed = SEDBuilder("my_photometry.csv")
 sed.convert_magnitudes_to_flux()
